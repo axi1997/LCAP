@@ -17,7 +17,7 @@ deepspeed --master_port 29600 lcma/train/train.py \
     --mm_use_im_patch_token False \
     --bf16 True \
     --output_dir $outputdir \
-    --num_train_epochs 1 \
+    --num_train_epochs 10 \
     --per_device_train_batch_size 32 \
     --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps 1 \
@@ -25,7 +25,7 @@ deepspeed --master_port 29600 lcma/train/train.py \
     --save_strategy "steps" \
     --save_steps 24000 \
     --save_total_limit 1 \
-    --learning_rate 1e-3 \
+    --learning_rate 1e-4 \
     --weight_decay 0. \
     --warmup_ratio 0.03 \
     --lr_scheduler_type "cosine" \
@@ -35,6 +35,6 @@ deepspeed --master_port 29600 lcma/train/train.py \
     --gradient_checkpointing True \
     --dataloader_num_workers 4 \
     --lazy_preprocess True \
-    --report_to wandb
+    --report_to wandb \
 
 cp $vision_encoder/preprocessor_config.json  $outputdir
