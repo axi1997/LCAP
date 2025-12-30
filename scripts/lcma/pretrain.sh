@@ -35,6 +35,6 @@ deepspeed --master_port 29600 lcma/train/train.py \
     --gradient_checkpointing True \
     --dataloader_num_workers 4 \
     --lazy_preprocess True \
-    --report_to wandb \
+    --report_to wandb
 
 cp $vision_encoder/preprocessor_config.json  $outputdir
