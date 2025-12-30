@@ -36,11 +36,11 @@ Two stages: (1) feature alignment stage: use [LLaVA-1.5](https://github.com/haot
 
 ###  Pretraining
 ```
-bash ./scripts/lcma/pretrain.sh
+bash pretrain.sh
 ```
 ###  Finetuning
 ```
-bash ./scripts/lcma/finetune.sh
+bash finetune.sh
 ```
 
 ##  Evaluation
