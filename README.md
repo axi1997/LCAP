@@ -1,5 +1,5 @@
 # LCAP
-![LCMA-LLM](lcma-llm.jpg)
+![LCMA-LLM](lcap.jpg)
 
 ## Usage
 ### Requirements
