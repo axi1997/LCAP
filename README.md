@@ -28,7 +28,7 @@ The hyperparameters used in pretraining and finetuning are provided below.
 ## Download
 [Phi-2](https://huggingface.co/susnato/phi-2) and
 [SigLIP](https://huggingface.co/google/siglip-so400m-patch14-384)
-[LCAP](https://huggingface.co/susnato/phi-2) 
+[Model Weight](https://pan.quark.cn/s/88532a81a468) 
 
 ## Training
 Two stages: (1) feature alignment stage: use [LLaVA-1.5](https://github.com/haotian-liu/LLaVA/blob/main/docs/Data.md) 558K subset of the LAION-CC-SBU dataset to connect a *frozen pretrained* vision encoder to a *frozen LLM*; 
